@@ -3,4 +3,12 @@ node( "linux" ){
         sh "echo 'hello word'"
         echo "hello word"
     }
+
+    stage( "terraform init" ) {
+        sh "terraform init"
+    }
+
+    stage ( "terrafomr plan" ) {
+        sh "terraform plan"
+    }
 }
