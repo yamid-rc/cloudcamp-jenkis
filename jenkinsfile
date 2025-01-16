@@ -1,0 +1,6 @@
+node( "linux" ){
+    stage( "hello word" ) {
+        sh "echo 'hello word'"
+        echo "hello word"
+    }
+}
